@@ -137,9 +137,6 @@ insertTrie overwrite (word:words) i (Trie is maps) =
                     in maps' `seq` Trie is maps'
     }
 
-
-
-
 lookupTrie :: [Int] -> Trie a -> Maybe (Trie a)
 lookupTrie [] trie = Just trie
 lookupTrie (word:words) (Trie _ maps) =
