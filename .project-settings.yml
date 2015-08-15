@@ -1,0 +1,47 @@
+binary-ghc-args:
+- -O
+- -threaded
+module-template: ! 'module MODULE_NAME where
+
+'
+extensions:
+  GADTs: true
+  TypeSynonymInstances: true
+  FunctionalDependencies: true
+  FlexibleInstances: true
+  MultiParamTypeClasses: true
+  FlexibleContexts: true
+environment: ghc-7.8-stable-14.09
+auto-hidden: []
+cabal-file: project.cabal
+version: 1
+extra-packages: ! 'Hackage: parsec
+
+  Hackage; mtl
+
+  Hackage: containers
+
+  Hackage: bytestring
+
+  Hackage: deepseq
+
+  Hackage: hashtable
+
+  Hackage: dequeue 0.1.5
+
+  Hackage: bitset 1.0
+
+  Hackage: parallel'
+ghc-args:
+- -Wall
+excluded-modules:
+- Setup.lhs
+- benchmarks/BitCode.lhs
+- benchmarks/DERIV.lhs
+- benchmarks/HSPOSIX.lhs
+- benchmarks/TDFA.lhs
+- benchmarks/Timer.hs
+- benchmarks/gen.hs
+- benchmarks/gen2.hs
+- benchmarks/gen3.hs
+- benchmarks/genEmail.hs
