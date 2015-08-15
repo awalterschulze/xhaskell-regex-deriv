@@ -1,4 +1,5 @@
-> -- | A translation schema from the external syntax (ERE) to our interal syntax (xhaskell style pattern)
+A translation schema from the external syntax (ERE) to our interal syntax (xhaskell style pattern)
+
 > module Text.Regex.Deriv.Translate
 >     ( translate, translatePosix ) where
 

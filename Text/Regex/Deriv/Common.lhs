@@ -1,5 +1,7 @@
 > {-# LANGUAGE BangPatterns #-}
-> -- | this module contains the defs of common data types and type classes
+
+this module contains the defs of common data types and type classes
+
 > module Text.Regex.Deriv.Common 
 >     ( Range(..), range, minRange, maxRange
 >     , Letter

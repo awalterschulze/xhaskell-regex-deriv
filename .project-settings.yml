@@ -17,7 +17,7 @@ cabal-file: project.cabal
 version: 1
 extra-packages: ! 'Hackage: parsec
 
-  Hackage; mtl
+  Hackage: mtl
 
   Hackage: containers
 
