@@ -12,17 +12,14 @@ Description:            Regex algorithm implementation using derivatives.
 Category:               Text
 Tested-With:            GHC
 Build-Type:             Simple
-Cabal-Version:          >= 1.2.3
-
-flag base4
+Cabal-Version:          >= 1.2
 
 library 
-  Build-Depends:        regex-base >= 0.93.1, parsec, mtl, containers, bytestring, deepseq, hashable >= 1.2.0.5, hashtables, dequeue
+  Build-Depends:        regex-base >= 0.93.1, parsec, mtl, containers, bytestring, deepseq, hashable >= 1.2.0.5, hashtables
   Build-Depends:	bitset, parallel
   Build-Depends:         base >= 4.0 && < 5.0, ghc-prim
   Exposed-Modules:       Text.Regex.Deriv.ByteString
                          Text.Regex.Deriv.ByteString.Posix
-                         Text.Regex.Deriv.ByteString.BitCode
                          Text.Regex.Deriv.Common 
                          Text.Regex.Deriv.Word
                          Text.Regex.Deriv.ExtPattern
